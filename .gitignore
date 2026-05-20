@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/Neo4J_CustomerEntitlement.api/Neo4J_CustomerEntitlement.api/obj/Release/net8.0
+/Neo4J_CustomerEntitlement.api/Neo4J_CustomerEntitlement.api/obj/Debug/net8.0
+/Neo4J_CustomerEntitlement.api/Neo4J_CustomerEntitlement.api/obj
