@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.883" branch-rate="0.75" version="1.9" timestamp="1779250835" lines-covered="151" lines-valid="171" branches-covered="27" branches-valid="36">
+  <sources>
+    <source>C:\Users\kiran\source\repos\Neo4J_CustomerEntitlement\CustomerEntitlement.Api\</source>
+  </sources>
+  <packages>
+    <package name="CustomerEntitlement.Api" line-rate="0.883" branch-rate="0.75" complexity="75">
+      <classes>
+        <class name="Program" filename="Program.cs" line-rate="0.7714" branch-rate="0.125" complexity="8">
+          <methods>
+            <method name="&lt;Main&gt;$" signature="(System.String[])" line-rate="0.7714" branch-rate="0.125" complexity="8">
+              <lines>
+                <line number="5" hits="1" branch="False" />
+                <line number="10" hits="1" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="True" condition-coverage="0% (0/6)">
+                  <conditions>
+                    <condition number="35" type="jump" coverage="0%" />
+                    <condition number="61" type="jump" coverage="0%" />
+                    <condition number="87" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="2" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="100" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="2" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="57" hits="2" branch="False" />
+                <line number="60" hits="1" branch="False" />
+                <line number="61" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="False" />
+            <line number="10" hits="1" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="True" condition-coverage="0% (0/6)">
+              <conditions>
+                <condition number="35" type="jump" coverage="0%" />
+                <condition number="61" type="jump" coverage="0%" />
+                <condition number="87" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="2" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="100" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="2" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="57" hits="2" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="61" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Infrastructure.Neo4jEntitlementRepository" filename="Infrastructure\Neo4jEntitlementRepository.cs" line-rate="1" branch-rate="0.5" complexity="3">
+          <methods>
+            <method name="MapToRow" signature="(Neo4j.Driver.IRecord)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="85" hits="5" branch="False" />
+                <line number="86" hits="5" branch="False" />
+                <line number="87" hits="5" branch="False" />
+                <line number="88" hits="5" branch="False" />
+                <line number="89" hits="5" branch="False" />
+                <line number="90" hits="5" branch="False" />
+                <line number="91" hits="5" branch="False" />
+                <line number="92" hits="5" branch="False" />
+                <line number="93" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Neo4j.Driver.IDriver,Microsoft.Extensions.Configuration.IConfiguration)" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="58" hits="3" branch="False" />
+                <line number="59" hits="3" branch="False" />
+                <line number="60" hits="3" branch="False" />
+                <line number="61" hits="3" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="28" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="62" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="85" hits="5" branch="False" />
+            <line number="86" hits="5" branch="False" />
+            <line number="87" hits="5" branch="False" />
+            <line number="88" hits="5" branch="False" />
+            <line number="89" hits="5" branch="False" />
+            <line number="90" hits="5" branch="False" />
+            <line number="91" hits="5" branch="False" />
+            <line number="92" hits="5" branch="False" />
+            <line number="93" hits="5" branch="False" />
+            <line number="58" hits="3" branch="False" />
+            <line number="59" hits="3" branch="False" />
+            <line number="60" hits="3" branch="False" />
+            <line number="61" hits="3" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="28" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="62" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Infrastructure.Neo4jEntitlementRepository/&lt;&gt;c__DisplayClass4_0" filename="Infrastructure\Neo4jEntitlementRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;EvaluateAsync&gt;b__0" signature="(Neo4j.Driver.SessionConfigBuilder)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="68" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="68" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Infrastructure.Neo4jEntitlementRepository/&lt;&gt;c__DisplayClass4_0/&lt;&lt;EvaluateAsync&gt;b__1&gt;d" filename="Infrastructure\Neo4jEntitlementRepository.cs" line-rate="0.11109999999999999" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.11109999999999999" branch-rate="1" complexity="1">
+              <lines>
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="False" />
+                <line number="73" hits="0" branch="False" />
+                <line number="74" hits="0" branch="False" />
+                <line number="75" hits="0" branch="False" />
+                <line number="76" hits="0" branch="False" />
+                <line number="77" hits="0" branch="False" />
+                <line number="78" hits="0" branch="False" />
+                <line number="79" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="73" hits="0" branch="False" />
+            <line number="74" hits="0" branch="False" />
+            <line number="75" hits="0" branch="False" />
+            <line number="76" hits="0" branch="False" />
+            <line number="77" hits="0" branch="False" />
+            <line number="78" hits="0" branch="False" />
+            <line number="79" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Infrastructure.Neo4jEntitlementRepository/&lt;EvaluateAsync&gt;d__4" filename="Infrastructure\Neo4jEntitlementRepository.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="67" hits="3" branch="False" />
+                <line number="70" hits="3" branch="False" />
+                <line number="81" hits="3" branch="False" />
+                <line number="82" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="67" hits="3" branch="False" />
+            <line number="70" hits="3" branch="False" />
+            <line number="81" hits="3" branch="False" />
+            <line number="82" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Infrastructure.Neo4jSeedHostedService" filename="Infrastructure\Neo4jSeedHostedService.cs" line-rate="1" branch-rate="0.5" complexity="4">
+          <methods>
+            <method name="StopAsync" signature="(System.Threading.CancellationToken)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="61" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;StartAsync&gt;b__4_0" signature="(Neo4j.Driver.SessionConfigBuilder)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Neo4j.Driver.IDriver,Microsoft.Extensions.Logging.ILogger`1&lt;CustomerEntitlement.Api.Infrastructure.Neo4jSeedHostedService&gt;,Microsoft.Extensions.Configuration.IConfiguration)" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="19" hits="5" branch="False" />
+                <line number="20" hits="5" branch="False" />
+                <line number="21" hits="5" branch="False" />
+                <line number="22" hits="5" branch="False" />
+                <line number="23" hits="5" branch="False" />
+                <line number="24" hits="5" branch="False" />
+                <line number="25" hits="5" branch="False" />
+                <line number="26" hits="5" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="35" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="27" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="61" hits="3" branch="False" />
+            <line number="33" hits="4" branch="False" />
+            <line number="19" hits="5" branch="False" />
+            <line number="20" hits="5" branch="False" />
+            <line number="21" hits="5" branch="False" />
+            <line number="22" hits="5" branch="False" />
+            <line number="23" hits="5" branch="False" />
+            <line number="24" hits="5" branch="False" />
+            <line number="25" hits="5" branch="False" />
+            <line number="26" hits="5" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="35" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="27" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Infrastructure.Neo4jSeedHostedService/&lt;&gt;c/&lt;&lt;StartAsync&gt;b__4_1&gt;d" filename="Infrastructure\Neo4jSeedHostedService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="50" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="50" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Infrastructure.Neo4jSeedHostedService/&lt;&gt;c/&lt;&lt;StartAsync&gt;b__4_2&gt;d" filename="Infrastructure\Neo4jSeedHostedService.cs" line-rate="0.2" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.2" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Infrastructure.Neo4jSeedHostedService/&lt;StartAsync&gt;d__4" filename="Infrastructure\Neo4jSeedHostedService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="30" hits="4" branch="False" />
+                <line number="32" hits="4" branch="False" />
+                <line number="35" hits="3" branch="False" />
+                <line number="42" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="271" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="43" hits="2" branch="False" />
+                <line number="44" hits="2" branch="False" />
+                <line number="45" hits="2" branch="False" />
+                <line number="46" hits="2" branch="False" />
+                <line number="49" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="1" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="57" hits="1" branch="False" />
+                <line number="58" hits="1" branch="False" />
+                <line number="59" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="30" hits="4" branch="False" />
+            <line number="32" hits="4" branch="False" />
+            <line number="35" hits="3" branch="False" />
+            <line number="42" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="271" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="43" hits="2" branch="False" />
+            <line number="44" hits="2" branch="False" />
+            <line number="45" hits="2" branch="False" />
+            <line number="46" hits="2" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="1" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="57" hits="1" branch="False" />
+            <line number="58" hits="1" branch="False" />
+            <line number="59" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Domain.Channel" filename="Domain\Channel.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Domain.CustomerAccessProfile" filename="Domain\CustomerAccessProfile.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Domain.Entitlement" filename="Domain\Entitlement.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Domain.EvaluationMetadata" filename="Domain\EvaluationMetadata.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_ProfileId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="36" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="36" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Domain.Party" filename="Domain\Party.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Domain.ProductInstance" filename="Domain\ProductInstance.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Domain.Service" filename="Domain\Service.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Domain.UtilizationLimit" filename="Domain\UtilizationLimit.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="3" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Application.EvaluationRow" filename="Application\EntitlementEvaluator.cs" line-rate="1" branch-rate="1" complexity="9">
+          <methods>
+            <method name="get_PartyFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProfileFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProfileStatus" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="12" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProfileId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EntitlementFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ResourceFound" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AllowedChannels" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_EntitlementName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="18" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Boolean,System.Boolean,System.String,System.String,System.Boolean,System.Boolean,System.Collections.Generic.IReadOnlyList`1&lt;System.String&gt;,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="13" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="12" branch="False" />
+            <line number="12" hits="10" branch="False" />
+            <line number="13" hits="12" branch="False" />
+            <line number="14" hits="13" branch="False" />
+            <line number="15" hits="7" branch="False" />
+            <line number="16" hits="6" branch="False" />
+            <line number="17" hits="6" branch="False" />
+            <line number="18" hits="18" branch="False" />
+            <line number="10" hits="13" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Application.EntitlementEvaluator" filename="Application\EntitlementEvaluator.cs" line-rate="1" branch-rate="1" complexity="17">
+          <methods>
+            <method name="Evaluate" signature="(CustomerEntitlement.Api.Application.EntitlementQuery,CustomerEntitlement.Api.Application.EvaluationRow)" line-rate="1" branch-rate="1" complexity="16">
+              <lines>
+                <line number="36" hits="11" branch="False" />
+                <line number="37" hits="11" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="12" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="38" hits="2" branch="False" />
+                <line number="40" hits="9" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="58" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="1" branch="False" />
+                <line number="43" hits="8" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="113" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="44" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="174" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="45" hits="2" branch="False" />
+                <line number="46" hits="2" branch="False" />
+                <line number="48" hits="6" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="238" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="53" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="354" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="58" hits="4" branch="False" />
+                <line number="59" hits="4" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="475" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="60" hits="3" branch="False" />
+                <line number="61" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="505" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="62" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="67" hits="2" branch="False" />
+                <line number="68" hits="2" branch="False" />
+                <line number="70" hits="3" branch="False" />
+                <line number="71" hits="3" branch="False" />
+                <line number="72" hits="3" branch="False" />
+                <line number="73" hits="3" branch="False" />
+                <line number="74" hits="3" branch="False" />
+                <line number="75" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="Deny" signature="(System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="78" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="36" hits="11" branch="False" />
+            <line number="37" hits="11" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="12" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="38" hits="2" branch="False" />
+            <line number="40" hits="9" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="58" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="41" hits="1" branch="False" />
+            <line number="43" hits="8" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="113" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="44" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="174" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="45" hits="2" branch="False" />
+            <line number="46" hits="2" branch="False" />
+            <line number="48" hits="6" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="238" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="53" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="354" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="58" hits="4" branch="False" />
+            <line number="59" hits="4" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="475" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="60" hits="3" branch="False" />
+            <line number="61" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="505" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="62" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="67" hits="2" branch="False" />
+            <line number="68" hits="2" branch="False" />
+            <line number="70" hits="3" branch="False" />
+            <line number="71" hits="3" branch="False" />
+            <line number="72" hits="3" branch="False" />
+            <line number="73" hits="3" branch="False" />
+            <line number="74" hits="3" branch="False" />
+            <line number="75" hits="11" branch="False" />
+            <line number="78" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Application.EntitlementQuery" filename="Application\EntitlementQuery.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_SubjectId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Action" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ResourceId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ChannelId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="17" branch="False" />
+                <line number="17" hits="15" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="9" branch="False" />
+            <line number="14" hits="8" branch="False" />
+            <line number="15" hits="5" branch="False" />
+            <line number="16" hits="11" branch="False" />
+            <line number="12" hits="17" branch="False" />
+            <line number="17" hits="15" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Application.EntitlementResult" filename="Application\EntitlementResult.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_IsAllowed" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="19" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Reason" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="21" branch="False" />
+              </lines>
+            </method>
+            <method name="get_GrantedTerm" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Details" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="13" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Boolean,System.String,System.String,CustomerEntitlement.Api.Domain.EvaluationMetadata)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="19" branch="False" />
+                <line number="17" hits="19" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="19" branch="False" />
+            <line number="14" hits="21" branch="False" />
+            <line number="15" hits="6" branch="False" />
+            <line number="16" hits="13" branch="False" />
+            <line number="12" hits="19" branch="False" />
+            <line number="17" hits="19" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Application.EvaluateEntitlementHandler" filename="Application\EvaluateEntitlementHandler.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Handle" signature="(CustomerEntitlement.Api.Application.EntitlementQuery,System.Threading.CancellationToken)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(CustomerEntitlement.Api.Application.IEntitlementRepository)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="16" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="8" branch="False" />
+            <line number="9" hits="16" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Controllers.EntitlementsController" filename="Api\Controllers\EntitlementsController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(MediatR.IMediator)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="12" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="12" branch="False" />
+          </lines>
+        </class>
+        <class name="CustomerEntitlement.Api.Controllers.EntitlementsController/&lt;Evaluate&gt;d__2" filename="Api\Controllers\EntitlementsController.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="45" hits="5" branch="False" />
+                <line number="46" hits="5" branch="True" condition-coverage="100% (6/6)">
+                  <conditions>
+                    <condition number="34" type="jump" coverage="100%" />
+                    <condition number="52" type="jump" coverage="100%" />
+                    <condition number="75" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="47" hits="5" branch="False" />
+                <line number="48" hits="5" branch="False" />
+                <line number="49" hits="3" branch="False" />
+                <line number="50" hits="3" branch="False" />
+                <line number="53" hits="2" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="45" hits="5" branch="False" />
+            <line number="46" hits="5" branch="True" condition-coverage="100% (6/6)">
+              <conditions>
+                <condition number="34" type="jump" coverage="100%" />
+                <condition number="52" type="jump" coverage="100%" />
+                <condition number="75" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="47" hits="5" branch="False" />
+            <line number="48" hits="5" branch="False" />
+            <line number="49" hits="3" branch="False" />
+            <line number="50" hits="3" branch="False" />
+            <line number="53" hits="2" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="4" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

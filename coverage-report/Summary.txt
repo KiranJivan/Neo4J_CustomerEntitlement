@@ -1,0 +1,39 @@
+Summary
+  Generated on: 20/05/2026 - 4:34:04 pm
+  Coverage date: 20/05/2026 - 4:33:48 pm
+  Parser: Cobertura
+  Assemblies: 1
+  Classes: 17
+  Files: 16
+  Line coverage: 92.6%
+  Covered lines: 151
+  Uncovered lines: 12
+  Coverable lines: 163
+  Total lines: 492
+  Branch coverage: 93.3% (28 of 30)
+  Covered branches: 28
+  Total branches: 30
+  Method coverage: 100% (43 of 43)
+  Full method coverage: 90.6% (39 of 43)
+  Covered methods: 43
+  Fully covered methods: 39
+  Total methods: 43
+
+CustomerEntitlement.Api                                               92.6%
+  CustomerEntitlement.Api.Application.EntitlementEvaluator             100%
+  CustomerEntitlement.Api.Application.EntitlementQuery                 100%
+  CustomerEntitlement.Api.Application.EntitlementResult                100%
+  CustomerEntitlement.Api.Application.EvaluateEntitlementHandler       100%
+  CustomerEntitlement.Api.Application.EvaluationRow                    100%
+  CustomerEntitlement.Api.Controllers.EntitlementsController           100%
+  CustomerEntitlement.Api.Domain.Channel                               100%
+  CustomerEntitlement.Api.Domain.CustomerAccessProfile                 100%
+  CustomerEntitlement.Api.Domain.Entitlement                           100%
+  CustomerEntitlement.Api.Domain.EvaluationMetadata                    100%
+  CustomerEntitlement.Api.Domain.Party                                 100%
+  CustomerEntitlement.Api.Domain.ProductInstance                       100%
+  CustomerEntitlement.Api.Domain.Service                               100%
+  CustomerEntitlement.Api.Domain.UtilizationLimit                      100%
+  CustomerEntitlement.Api.Infrastructure.Neo4jEntitlementRepository   71.4%
+  CustomerEntitlement.Api.Infrastructure.Neo4jSeedHostedService       87.8%
+  Program                                                              100%

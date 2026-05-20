@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CustomerEntitlement.Api/CustomerEntitlement.Api.csproj" />
+  <Project Path="CustomerEntitlement.Tests/CustomerEntitlement.Tests.csproj" />
+</Solution>

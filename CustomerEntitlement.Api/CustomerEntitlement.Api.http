@@ -1,0 +1,106 @@
+@CustomerEntitlement.Api_HostAddress = http://localhost:5258
+
+# ---------------------------------------------------------------------------
+# ALLOW — Kiran: ServiceRequest on SRV-STOP via CH-CALL
+# Expected: isAllowed=true, grantedTerm="CallCenterServicing"
+# ---------------------------------------------------------------------------
+POST {{CustomerEntitlement.Api_HostAddress}}/api/entitlements/evaluate
+Content-Type: application/json
+
+{
+  "subjectId":  "P-001",
+  "action":     "ServiceRequest",
+  "resourceId": "SRV-STOP",
+  "channelId":  "CH-CALL"
+}
+
+###
+
+# ---------------------------------------------------------------------------
+# ALLOW — Kiran: ExecuteTransfer on ACC-2002 via CH-MOB
+# Expected: isAllowed=true, grantedTerm="MobileTransfer"
+# ---------------------------------------------------------------------------
+POST {{CustomerEntitlement.Api_HostAddress}}/api/entitlements/evaluate
+Content-Type: application/json
+
+{
+  "subjectId":  "P-001",
+  "action":     "ExecuteTransfer",
+  "resourceId": "ACC-2002",
+  "channelId":  "CH-MOB"
+}
+
+###
+
+# ---------------------------------------------------------------------------
+# DENY — wrong channel: ENT-01 only permits CH-CALL, not CH-MOB
+# Expected: isAllowed=false, reason contains "CH-MOB" and "CH-CALL"
+# ---------------------------------------------------------------------------
+POST {{CustomerEntitlement.Api_HostAddress}}/api/entitlements/evaluate
+Content-Type: application/json
+
+{
+  "subjectId":  "P-001",
+  "action":     "ServiceRequest",
+  "resourceId": "SRV-STOP",
+  "channelId":  "CH-MOB"
+}
+
+###
+
+# ---------------------------------------------------------------------------
+# DENY — resource not accessible: ENT-02 does not grant access to SRV-STOP
+# Expected: isAllowed=false, reason contains "SRV-STOP" and "does not grant"
+# ---------------------------------------------------------------------------
+POST {{CustomerEntitlement.Api_HostAddress}}/api/entitlements/evaluate
+Content-Type: application/json
+
+{
+  "subjectId":  "P-001",
+  "action":     "ExecuteTransfer",
+  "resourceId": "SRV-STOP"
+}
+
+###
+
+# ---------------------------------------------------------------------------
+# DENY — no access profile: Mark is isolated (Party + Profile nodes exist but no OWNS edge)
+# Expected: isAllowed=false, reason contains "No Customer Access Profile"
+# ---------------------------------------------------------------------------
+POST {{CustomerEntitlement.Api_HostAddress}}/api/entitlements/evaluate
+Content-Type: application/json
+
+{
+  "subjectId":  "P-002",
+  "action":     "ServiceRequest",
+  "resourceId": "SRV-STOP"
+}
+
+###
+
+# ---------------------------------------------------------------------------
+# DENY — subject not found: P-999 has no Party node in the graph
+# Expected: isAllowed=false, reason contains "P-999" and "not found"
+# ---------------------------------------------------------------------------
+POST {{CustomerEntitlement.Api_HostAddress}}/api/entitlements/evaluate
+Content-Type: application/json
+
+{
+  "subjectId":  "P-999",
+  "action":     "ServiceRequest",
+  "resourceId": "SRV-STOP"
+}
+
+###
+
+# ---------------------------------------------------------------------------
+# VALIDATION — missing required fields → 400 Bad Request
+# ---------------------------------------------------------------------------
+POST {{CustomerEntitlement.Api_HostAddress}}/api/entitlements/evaluate
+Content-Type: application/json
+
+{
+  "subjectId": "P-001"
+}
+
+###
