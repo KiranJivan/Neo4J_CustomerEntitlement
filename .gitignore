@@ -3,3 +3,12 @@
 ################################################################################
 
 /.vs
+/Neo4J_CustomerEntitlement.API/Neo4J_CustomerEntitlement.API/obj
+/Neo4J_CustomerEntitlement.API/Neo4J_CustomerEntitlement.API/bin
+/Neo4J_CustomerEntitlement.API/Neo4J_CustomerEntitlement.Tests/obj
+/Neo4J_CustomerEntitlement.API/Neo4J_CustomerEntitlement.Tests/bin
+/.claude
+/CustomerEntitlement.Api/bin/Debug/net8.0
+/CustomerEntitlement.Api/obj
+/CustomerEntitlement.Tests/bin/Debug/net8.0
+/CustomerEntitlement.Tests/obj
