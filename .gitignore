@@ -3,6 +3,7 @@
 ################################################################################
 
 /.vs
+<<<<<<< HEAD
 /Neo4J_CustomerEntitlement.API/Neo4J_CustomerEntitlement.API/obj
 /Neo4J_CustomerEntitlement.API/Neo4J_CustomerEntitlement.API/bin
 /Neo4J_CustomerEntitlement.API/Neo4J_CustomerEntitlement.Tests/obj
@@ -12,3 +13,8 @@
 /CustomerEntitlement.Api/obj
 /CustomerEntitlement.Tests/bin/Debug/net8.0
 /CustomerEntitlement.Tests/obj
+=======
+/Neo4J_CustomerEntitlement.api/Neo4J_CustomerEntitlement.api/obj/Release/net8.0
+/Neo4J_CustomerEntitlement.api/Neo4J_CustomerEntitlement.api/obj/Debug/net8.0
+/Neo4J_CustomerEntitlement.api/Neo4J_CustomerEntitlement.api/obj
+>>>>>>> dc5dd27f664a596f239e3578b08a2c5eaedc3550
